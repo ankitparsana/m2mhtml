@@ -16,6 +16,8 @@
         event.preventDefault();
     });
 
+    $('.carousel').carousel();
+
     $('.ui.dropdown').dropdown();
     $('.ui.menu .ui.dropdown').dropdown({
         on: 'hover'
@@ -27,9 +29,9 @@
         increaseArea: '20%' // optional
     });
 
-    $('.menu-button').click(function () {
-        $('#mainNav').toggleClass('bg-white');
-    });
+    //$('.menu-button').click(function () {
+    //    $('#mainNav').toggleClass('bg-white');
+    //});
 
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
@@ -41,14 +43,6 @@
     $('.navbar-collapse ul li a').click(function () {
         $('.navbar-toggle:visible').click();
     });
-
-    // Fit Text Plugin for Main Header
-    //$("h1").fitText(
-    //    1.2, {
-    //        minFontSize: '35px',
-    //        maxFontSize: '65px'
-    //    }
-    //);
 
     // Offset for Main Navigation
     $('#mainNav').affix({

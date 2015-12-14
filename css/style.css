@@ -53,14 +53,51 @@ aside {
     padding: 0;
 }
 
+/*Header*/
 .navbar-default {
     border-color: rgba(34, 34, 34, .05);
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    background-color: transparent;
+    background-color: #11181c;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
-    padding: 10px 30px 10px 30px;
+    padding: 5px 0px 5px 0px;
+}
+
+.navbar-default .nav > li > a {
+    font-size: 10px;
+    padding: 10px 10px;
+    color: #466677;
+    font-weight: 600;
+}
+
+.navbar-default .nav > li > a.active {
+    color: #FFF;
+}
+
+.head-social-cont a {
+    padding: 10px 5px !important;
+}
+
+.navbar-collapsheade {
+    padding-top: 5px;
+}
+
+.logo-container {
+    background: #008cbe;
+    padding: 15px 20px;
+}
+
+.nav-bar-left {
+    padding-left: 15px;
+}
+
+.nav-bar-right {
+    padding-right: 5px;
+}
+
+.nav-bar-right li a {
+    color: #008cbe !important;
 }
 
 /* For Large Screen Start */
@@ -73,6 +110,7 @@ aside {
         border-color: rgba(255, 255, 255, .3);
         background-color: #000;
         border: none;
+        padding: 0;
     }
 
     .navbar-default .navbar-header .navbar-brand {
@@ -82,10 +120,6 @@ aside {
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
         color: #fff;
-    }
-
-    .navbar-default .nav > li > a {
-        color: rgba(255, 255, 255, 1);
     }
 
     .navbar-default .nav > li > a:focus {
@@ -121,6 +155,14 @@ aside {
     .navbar-default.affix .nav > li > a:focus:hover {
         color: #f05f40;
     }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .nc-header {
+        padding-top: 20px;
+    }
 }
 
 /*Layout for Ipad(lanscape)*/
@@ -139,6 +181,33 @@ aside {
 
 /*Layout for Mobile(lanscape)*/
 @media handheld, only screen and (max-width: 767px) {
+    .navbar-default {
+        padding: 0;
+    }
+
+    .navbar-toggle {
+        padding: 9px 10px;
+        margin-top: 17px;
+        margin-right: 5px;
+        margin-bottom: 0px;
+        background-color: transparent !important;
+        border: 0px solid transparent;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+        width: 25px;
+        height: 3px;
+    }
+
+    .logo-container {
+        padding: 10px;
+    }
+
+    .nav-bar-right {
+        padding-left: 15px;
+    }
+
 
 }
 

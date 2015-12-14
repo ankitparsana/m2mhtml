@@ -688,6 +688,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .m-clear {
+        clear: both;
+    }
+
     .m-top-10 {
         top: 10px;
     }
